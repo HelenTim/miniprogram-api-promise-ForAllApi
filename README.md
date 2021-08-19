@@ -8,16 +8,16 @@ Extend WeChat miniprogram's api to surport promise.
 # Installation
 
 ```
-npm install --save miniprogram-api-promise-all
+npm install --save miniprogram-api-promise-forallapi
 ```
 
 # Getting started
 Call the method promisifyAll at the program entry (app.js), It only needs to be called once.
-微信官网并没有把所有api转为promise方式，但是这里可以
+The package on the wechat official website does not convert all APIs to promise, but it can be used here
 
 💨example:
 ```
-import { promisifyAll, promisify } from 'miniprogram-api-promise';
+import { promisifyAll, promisify } from 'miniprogram-api-promise-forallapi';
 
 const wxp = {}
 // promisify all wx's api
@@ -31,4 +31,10 @@ wxp.getSystemInfo({success(res) {console.log(res)}})
 
 // promisify single api
 promisify(wx.getSystemInfo)().then(console.log)
+
+// even if wx.getAccountInfoSync is not a promise interface，but we can still use it like this。
+wxp.getAccountInfoSync().then(console.log)
+
+// We can also use it like this
+promisify('not a functoin').then(console.log)
 ```

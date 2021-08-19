@@ -1,6 +1,6 @@
 # miniprogram-api-promise-forallapi
 
-[![](https://img.shields.io/npm/v/miniprogram-api-promise.svg?style=flat)](https://www.npmjs.com/package/miniprogram-api-promise)
+[![](https://img.shields.io/badge/npm-v1.0.6-blue)](https://www.npmjs.com/package/miniprogram-api-promise-forallapi)
 [![](https://img.shields.io/github/license/wechat-miniprogram/api-typings.svg)](https://github.com/wechat-miniprogram/miniprogram-api-promise)
 
 Extend WeChat miniprogram's  all apis to surport promise.
